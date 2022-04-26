@@ -1,0 +1,587 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,ol,li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+
+  background-color: white;
+}
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*main 메인 */
+#main {
+  width: 100%;
+  height: 1670px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 0 0 200px;
+  
+}
+header {
+  width: 1300px;
+  height: 250px;
+  background-color: #ffffff;
+  margin: 0px 100px 0 100px;
+}
+#logo {
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  margin: 0 0px 0 590px;
+  float: left;
+} /*margin 오른쪽 opx-> float속성 사용하기 위해서*/
+#logo img {
+  width: 120px;
+  height: 120px;
+}
+#login {
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  margin: 30px 50px 0px 0;
+  float: right;
+}
+#login {
+  display: flex;
+  justify-content: space-between;
+}
+#login > img {
+  width: 40px;
+  height: 40px;
+}
+
+nav {
+  width: 100%;
+  height: 130px;
+  background-color: #ffffff;
+  clear: both;
+}
+
+#menu {
+  background-color: rgb(255, 255, 255);
+  
+}
+
+#menu .link {
+  display: inline-block;
+  margin-block: 2px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 60px 0px 0 195px;
+  position: relative;
+}
+
+#menu .link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(141, 141, 141);
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+#menu .link:hover::after {
+  transform: scaleX(1);
+}
+
+#slider {
+  width: 1300px;
+  height: 710px;
+  background-color: rgb(255, 255, 255);
+  margin: 0px 100px 0 100px;
+}
+#slider > img {
+  position: relative;
+  width: 690px;
+  height: 505px;
+  background-color: wheat;
+  margin: 30px 305px 0 305px;
+}
+#slider > h1 {
+  font-size: 60px;
+  position: absolute;
+  margin: 135px 60px;
+  text-align: center;
+}
+#slider > ul {
+  position: absolute;
+  margin: 350px 100px;
+}
+#slider > ul li {
+  padding: 8px;
+  color: gray;
+}
+#slider > ul li a {
+  text-decoration: none;
+  color: black;
+}
+#slider > p {
+  position: absolute;
+  margin: -350px 0px 10px 1010px;
+  font-size: 14px;
+}
+#slider > h2 {
+  position: absolute;
+  margin: -280px 0px 10px 1010px;
+  font-size: 60px;
+}
+#slider > .bt1 {
+  position: absolute;
+  margin: 500px 0 0 -200px;
+  border: 3px solid #3c67e3;
+  background-color: white;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+}
+#slider > .bt1 a {
+  color: black;
+  font-size: 20px;
+}
+#slider > .bt1:hover {
+  animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+#slider > .dot-container {
+  clear: both;
+  margin: 30px 600px;
+}
+#slider > div > .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*******************SECTION PART *******************/
+section {
+  width: 1300px;
+  height: 710px;
+  background-color: #ffffff;
+  margin: 0px 100px 0 100px;
+}
+section > #sub-img {
+  display: flex;
+  margin: 0px 50px 0 50px;
+}
+section > #sub-img > .sub-img1 {
+  margin: 10px 40px 0 -20px;
+}
+section > #sub-img > .sub-img2 {
+  margin: 10px 200px 0 0;
+}
+section > h2 {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin: -10px auto;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+section > button {
+  display: block;
+  margin: 25px auto;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #e5a112;
+  border: none;
+  box-shadow: 4px 4px 10px 1px black;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+section > button:hover {
+  transform: scale(1.2);
+}
+
+/*******************SUB1-LIST *******************/
+
+#sub1 {
+  width: 100%;
+  height: 3500px;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+#sub1-list {
+  width: 1300px;
+  height: 1250px;
+  background-color: #000000;
+  margin: 50px 100px 0 300px;
+  
+}
+
+
+#sub1-list > a{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: left;
+  position: absolute;
+  margin: 200px 0px 0 0px;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 13px;
+  border-bottom: 2px solid rgb(231, 65, 65);
+  width: 1300px;
+  text-align: center;
+  box-shadow: 1px 8px 40px rgb(143, 64, 64);
+  background-color: rgb(0, 0, 0);
+  
+}
+
+
+
+
+
+/* #sub1-list >.p1:hover{font-weight: bold;}*/
+#sub1-list span {
+  font-size: 35px;
+  position: absolute;
+  margin: 95px 0px 0 300px;
+}
+#sub1-list span a {
+  color: rgb(158, 158, 158) !important;
+}
+
+#list-box {
+  width: 1000px;
+  height: 1250px;
+  background-color: rgb(0, 0, 0);
+  margin: 0 150px;
+}
+#list-box > div {
+  float: left;
+  margin: 160px 40px 0 40px;
+  height: 210px;
+} /*img 내부 높이 조절 가능*/
+#list-box > div img {
+  width: 170px;
+  height: 170px;
+  margin: 200px 0 0 0;
+}
+#list-box > div img:hover {
+  transform: scale(1.1);
+}
+#list-box > div button {
+  width: 100px;
+  display: block;
+  margin: 15px auto;
+  padding: 8px;
+  background: black;
+  color: white;
+  font-size: 11px;
+  border: 1px solid;
+  border-radius: 20px;
+  box-shadow: 0.5px 0.5px 10px white;
+  cursor: pointer;
+}
+#list-box > div button:hover {
+  transform: scale(1.1);
+}
+#list-box > div p {
+  font-size: 8px;
+  text-align: center;
+  color: white;
+}
+
+/*******************SUB2-page *******************/
+
+#sub2_page > #page > .box1 img {
+  width: 550px;
+  height: 320px;
+}
+#sub2_page > #page > .box2 img {
+  width: 550px;
+  height: 320px;
+}
+#sub2_page > #page > .box5 img {
+  width: 550px;
+  height: 320px;
+}
+
+#sub2 {
+  width: 1500px;
+  height: 1070px;
+  background-color: white;
+  margin: 0px 0 0px 300px;
+}
+
+#sub2_page {
+  width: 1300px;
+  height: 1250px;
+  background-color: #000000;
+  margin: 150px 100px 0 300px;
+}
+#sub2_page > #page {
+  width: 1100px;
+  margin: 10px 100px;
+  height: 150px;
+  background-color: rgb(121, 41, 41) 23);
+}
+#page > .box1 {
+  float: left;
+  margin: 0px 0 0 80px;
+ 
+}
+#page > .box1 h2 {
+  font-size: 30px;
+  color: white;
+  margin: 50px 0 0 0;
+}
+#page > .box1 p {
+  font-size: 15px;
+  margin: 40px 0 0 0;
+  color: white;
+}
+
+#page > .box2 {
+  float: right;
+  margin: 0px 0 0 0;
+}
+
+#page > .box2 img {
+  box-shadow: 4px 4px 1200px rgb(189, 136, 39);
+  margin: 0px 0 0 0;
+}
+#page > .box3 {
+  clear: both;
+}
+#page > .box3 img {
+  box-shadow: 4px 4px 800px rgb(199, 71, 71);
+  margin: 180px -50px 0 -40px;
+}
+
+#page > .box4 {
+  float: right;
+  color: white;
+  margin: -260px 20px 0 0;
+}
+
+#page > .box4 h2 {
+  font-size: 30px;
+  color: white;
+}
+#page > .box4 p {
+  font-size: 15px;
+  margin: 30px 0 0 0;
+  color: rgb(226, 226, 226);
+}
+
+#page > .box5 img {
+  box-shadow: 4px 4px 800px rgb(233, 170, 33);
+  margin: 180px -50px 0 560px;
+}
+
+#page > .box6 h2 {
+  font-size: 30px;
+  color: white;
+  margin: -250px 0 0 0px;
+  position: absolute;
+}
+#page > .box6 p {
+  font-size: 15px;
+  margin: -180px 0 0 0;
+  color: rgb(226, 226, 226);
+  position: absolute;
+}
+
+#sub2-iconbox {
+  width: 1000px;
+  height: 250px;
+
+  border-radius: 60px;
+  margin: 250px 0 0 -120px;
+  border-bottom: 2px solid rgb(231, 65, 65);
+  width: 1300px;
+  text-align: center;
+  box-shadow: 1px 8px 40px rgb(143, 64, 64);
+  background-color: rgb(0, 0, 0);
+  
+}
+#sub2-iconbox > #icon > div {
+  float: left;
+  margin: 50px auto;
+  padding: 10px 95px;
+}
+
+#sub2-iconbox > #icon > div > a > img {
+  width: 55px;
+  height: 50px;
+  margin: 20px 4px;
+}
+#sub2-iconbox > #icon > div > a > img:hover {
+  transform: scale(1.2);
+}
+
+#sub2-iconbox > .pro{
+  font-size: 18px;
+  color: rgb(201, 201, 201);
+  position: absolute;
+  margin: 25px 550px;
+}
+#sub2-iconbox > #icon > div > h5 {
+  color: white;
+  display: block;
+  margin: 5px 0 0 -6px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*******************SUB2-bn *******************/
+#sub2_bn {
+  width: 1500px;
+  height: 535px;
+  background-color: white;
+  margin: 0px 100px 0 200px;
+}
+#sub2_bn > #sub2-text {
+  text-align: center;
+}
+#sub2_bn > #sub2-text h4 {
+  font-size: 35px;
+  padding: 45px;
+}
+#sub2_bn > #sub2-text p {
+  font-size: 18px;
+  margin: -10px 0 30px 0;
+}
+#sub2_bn > .bn-box {
+  width: 1300px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 60px;
+  box-sizing: border-box;
+  display: flex;
+  margin: 10px 100px;
+  box-shadow: 4px 4px 11px rgb(255, 255, 255);
+}
+#sub2_bn > .bn-box > .bn img {
+  width: 270px;
+  height: 200px;
+  margin: 20px auto;
+}
+#sub2_bn > .bn-box > .bn {
+  flex: 50%;
+  padding: 30px;
+}
+.bn-box > .bn > a:hover {
+  background-color: #cecece;
+}
+
+/*******************SUB2-account *******************/
+#sub2_account {
+  position: relative;
+  width: 100%;
+  height: 535px;
+  background-color: #e7e7e7;
+  
+}
+#sub2_account > #account {
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  margin: 100px 600px; /*박스배치*/
+  padding: 10px 80px;
+  box-sizing: content-box;
+  box-shadow: 4px 4px 40px black;
+  border-radius: 60px;
+}
+
+#account p,
+h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+#account > form > input[type="text"],
+input[type="password"] {
+  width: 60%;
+  height: 20px;
+  padding: 10px;
+  margin: 10px 90px;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+}
+
+#account > form > input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: rgb(218, 218, 218);
+}
+#account > form > .button > button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 50px;
+  padding: 5px 5px;
+  margin: 10px 280px;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.8;
+}
+#account > form > .button > button:hover {
+  opacity: 1;
+}
+
+/*******************footer *******************/
+#footer {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  
+  position: relative;
+}
+#footer > #foooter-icon {
+  width: 130px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  margin: 10px  0 0 400px;
+}
+#footer > #foooter-icon > img {
+  width: 35px;
+  height: 35px;
+}
+#footer > .p1,
+.p2 {
+  color: white;
+  font-size: 8px;
+  text-align: right;
+}
+
+#footer > .p1 {
+  position: absolute;
+  margin: 10px 0px 0 1100px;
+}
+#footer > .p2 {
+  position: absolute;
+  margin: 100px 0 0 760px;
+}

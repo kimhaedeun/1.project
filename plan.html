@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plan page</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/plan.css">
+    
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    
+</head>
+
+<body>
+  
+    <div id="main">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="img/main/logo.png" alt="logo"></a>
+            </div>
+            <div id="login">
+                <div><a href="#"><img src="img/main/manubar.png" alt="search"></a></div>
+                <div><a href="#"><img src="img/main/admin.png" alt="admin"></a></div>
+                <div><a href="#"><img src="img/main/menubar1.png" alt="menubar"></a></div>
+            </div>
+            <nav>
+
+
+                <div id="menu">
+                    <a href="detail_page.html" class="link">creativity  </a>
+                    <a href="plan.html" class="link">plan</a>
+                    <a href="#" class="link">discover</a>
+                    <a href="#" class="link">marketing&commercr</a>
+        
+                </div>
+        
+        
+        
+            </nav>
+
+        </header>
+    </div>
+</div>
+    <div id="slider">
+        <img src="img/plan/slider.jpg" alt="sub2" class="blob">
+        <h1 class="s_h1"><a href="">plan comparison – subscription and payment form detailing learn →</a> </h1>
+        <div id="iconlist">
+        <a href="#"><img src="img/main/list1.jpg" alt="list1" class="icon"></a>
+        <a href="#"><img src="img/main/list2.jpg" alt="list2" class="icon"></a>
+        <a href="#"><img src="img/main/list3.jpg" alt="list3" class="icon"></a>
+        <a href="#"><img src="img/main/list4.png" alt="list4" class="icon"></a>
+        <a href="#"><img src="img/main/list5.jpg" alt="list5" class="icon"></a>
+        <a href="#"><img src="img/main/list6.jpg" alt="list6" class="icon"></a>
+    </div>
+
+
+    <div id="sub-plan">
+
+        <div id="plan">
+            <button class="tablink" onclick="openPage('personal',this,'black')" id="defaultOpen">personal</button>
+            <button class="tablink" onclick="openPage('enterprise',this,'black')">enterprise</button>
+            <button class="tablink" onclick="openPage('student',this,'black')">students&teacheres</button>
+            <button class="tablink" onclick="openPage('schools',this,'black')">schools and universities</button>
+        </div>
+
+        <div id="personal" class="tabcontent">
+            <div id="container1">
+                <div class="item1">
+                    <a href="#"><img src="img/main/list8.jpg" alt="lsit8"></a>
+                    <h2>Creative Cloud all app</h2>
+                    <h3>Photoshop, Illustrator, Adobe Express, Premiere Pro, Acrobat Pro etc. 20 pieces over Creative Cloud apps use it.</h3>
+                    <input type="checkbox" name="plan" id="box_plan" checked> 
+                    <h4>Adobe Stock adition poem<br> 30days free experience*</h4>
+                    <p>62,000/month</p>
+                    <button type="button" id="myBtn">Buy Now</button>
+                    
+                    <h5>included entry:</h5>
+                    <div class="title"> 
+                        <span class="title-content">Acrobat Pro  </span>
+                        <span class="title-content title-second">Photoshop  </span>
+                        <span class="title-content title-third">Illustrator </span>
+                        <span class="title-content title-fourth">InDesigne </span>
+                        <a href=""><span class="title-content title-five"> The more </span></a>
+                    </div>
+                   
+                </div>
+                <div class="item">
+                    <h2>photography</h2>
+                    <div class="img1"><img src="img/main/list1.jpg" alt="list1"></div>
+                    <div class="img2"><img src="img/main/list3.jpg" alt="list3"></div>
+                    
+                    <p>11,000/month</p>
+           
+                    <input type="checkbox" name="plan" id="box_plan" checked> 
+                    <h4>Adobe Stock adition poem<br> 30days free experience*</h4>
+                    <button type="button">Buy Now</button>
+                </div>
+                <div class="item">
+                    <h2>Photoshopy</h2>
+                    
+                    <div class="img3"><img src="img/main/list1.jpg" alt="list1"></div>
+                    <p>24,000/month</p>
+           
+                    <input type="checkbox" name="plan" id="box_plan" checked> 
+                    <h4>Adobe Stock adition poem<br> 30days free experience*</h4>
+                    <button type="button" id="myBtn">Buy Now</button>
+
+                   
+                </div>
+
+                <div class="item">
+                    <h2>Lightroom PLAN<br> <span>(1TB OF storage included)</span></h2>
+                    
+                    <div class="img4"><img src="img/main/list3.jpg" alt="list3"></div>
+                    <p>11,000/month</p>
+           
+                    <input type="checkbox" name="plan" id="box_plan" checked> 
+                    <h4>Adobe Stock adition poem<br> 30days free experience*</h4>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div id="enterprise"class="tabcontent">
+            personal
+        </div>
+        <div id="student"class="tabcontent">
+            personal
+        </div>
+        <div id="schools"class="tabcontent">
+            personal
+        </div>
+    </div>
+     <!--order form *display:none* button click-show-->
+     <div id="myModal" class="modal"> 
+        <div id="orderbox" class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="col1">
+                <form action="/action_page.php" class="form-container">
+
+                    <label for="method"> <b> add a payment met hod </b> </label>
+                    <select name="method" id="method">
+                        <option value="method1">credit/debit cards</option>
+                    </select><br>
+
+                    <label for="cardnumber"> credit/debit card number</label>
+                    <input type="text" name="cardnumber" id="cardnumber">
+
+                    <label for="month">expiration month</label>
+                    <input type="month" name="month" id="month">
+
+                    <label for="code">security code</label>
+                    <input type="text">
+
+                <div class="row1"> 
+                        <div class="row1-1"> <label for="surname">surname</label>
+                        <input type="text">
+                        </div>
+
+                        <div class="row1-2"><label for="name">name</label>
+                        <input type="text">
+                        </div> 
+                </div>
+
+                    <label for="country"> country/region</label>
+                    <select name="country" id="country">
+                        <option value="korea" selected>republic of korea</option>
+                    </select>
+
+                    <div class="order">
+                    <p>By placing a reassuring order, you agree to Adobe's <span> subscription and cancellation terms and conditions.</span></p>
+                    </div>
+
+                    <button type="button" class="orderbutton">place an order</button>
+            </div>
+            <div id="cols2">  
+                <h2> kim haedeun, welcome!</h2>
+                <h5>the adobe ID account you are currently using</h5><br>
+                <hr>
+
+            
+                    <h4>my orders</h4>
+                    <div class="myorders">
+                    <img src="img/plan/white_list1.jpg" alt="list8" width="20px" height="20px"><span> <b>Creative Cloud with 100GB <br>capacity All apps</b> </span><br>
+
+                    <label for="commitment">commitment</label><br>
+                    <select name="commitment" id="commitment">
+                        <option value="93,000/month" selected>monthly plan</option>
+                        <option value="62,000/month">annual plan, monthly payment</option>
+                        <option value="712,800/year">annual plan,prepaid</option>
+                    </select>
+                    <hr>
+                    <div id="total">
+                        <p>subtotal</p>
+                        <h3>VAT 10%</h3>
+                        <h4>total to date</h4>
+                        
+                        <span id="subtotal"> 84,545/month</span>
+                        <span id="vat"> 8,455/month</span>
+                        <span id="price"> 93,000/month</span>
+                    
+                    </div>
+                </div>
+                <p class="learn">
+                    <b>to receive a full refund, please cancel before may 9.</b>
+                    You can cancel your subscription at any time by using your Adobe account page or by contacting 
+                    customer support. learn
+                </p>
+
+            </div>    
+
+            </form>
+            
+        
+
+        </div>
+    </div>
+    <!--form-->
+
+
+  
+   
+
+    <div id="footer">
+        
+        <div id="foooter-icon">
+            <a href="#"><img src="img/main/f_icon1.jpg" alt="f_icon1"></a>
+            <a href="#"><img src="img/main/f_icon2.jpg" alt="f_icon2"></a>
+            <a href="#"><img src="img/main/f_icon3.jpg" alt="f_icon3"></a>
+            
+        </div>
+        <p class="p1">
+            Copyright © 2022 Adobe. All rights reserved.  / privacy / terms of use / cookie preferences / AdChoices
+
+        </p>
+        <p class="p2">
+            business name: korean dobby systems (u.) / representative name: umi young / business registration number: 120-81-76744 /e-commerce business report number: 2019-seoul gangnam-00474<br> 
+            business site: tehran-ro 521, gangnam-gu, seoul (samsung-dong 159-8) / parnas tower, 19th floor (zip code: 06164) / main phone: 02-530-8000
+        </p>
+
+
+    </div>
+   
+   
+    <script>
+          function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+<script>
+    $(function(){
+        $("#commitment").change(function(){
+            if($(this).val()=="93,000/month"){
+                $( '#price' ).text( $( this ).val() );
+                $('#subtotal').text( "84,545/month" );
+                $('#vat').text( "8,455/month" );
+
+
+            } else if($(this).val()=="62,000/month"){
+                $( '#price' ).text($( this ).val());
+                $('#subtotal').text( "56,364/month" );
+                $('#vat').text("5,636/month");
+                
+
+            } else if($(this).val()=="712,800/year"){
+                $( '#price' ).text( $( this ).val() );
+                $('#subtotal').text("648,000/year" );
+                $('#vat').text( "64,800/year" );
+            }
+        });
+    });
+
+    
+    </script>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Waiting+for+the+Sunrise&display=swap');
+ 
+/*main 메인 */
+ #main { width: 1500px; height: 250px; background-color:rgb(255, 255, 255); margin:0px 0  0px 200px; }
+
+/*******************slider *******************/
+
+
+#slider .blob {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.blob {
+  animation: hue-animation 5s alternate infinite;
+}
+@keyframes hue-animation {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#slider h1 {
+  position: absolute;
+  margin: -420px 0 0px 450px;
+  font-size: 35px;
+  text-align: center;
+  animation: float 5s ease-in-out alternate infinite;
+  animation-delay: 0.1s;
+  
+  
+}
+
+#slider h1 a {
+  text-decoration: none;
+  color: rgb(231, 231, 231);
+  text-shadow: 2px 20px 80px rgb(0, 0, 0);
+  
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#slider > #iconlist {
+  width: 1300px;
+  height: 200px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: absolute;
+  margin: -330px 0 0 270px;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: 130px;
+  height: 130px;
+
+  color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgb(255, 255, 255), -5px -5px 10px rgb(8, 8, 8);
+  padding: 10px;
+  margin: 10px 20px 10px 50px;
+}
+.icon:hover {
+  animation: shadow 0.18s ease-in-out;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: inset 5px 5px 10px rgb(221, 221, 221),
+      inset 5px 5-5px 10px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+/*******************sub-plan *******************/
+
+
+#sub-plan {
+  width: 100%;
+  height: 1500px;
+  background-color: rgb(0, 0, 0);
+  margin: -4px 0 0px 0;
+}
+#sub-plan {
+  box-sizing: border-box;
+}
+
+.tablink {
+  background-color: rgb(214, 57, 57);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 30px 25px;
+  font-size: 20px;
+
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.tabcontent {
+  background-color: rgb(0, 0, 0);
+  height: 800px;
+  padding: 100px 20px;
+  display: none;
+}
+/*content 배경 색상 각각 지정할 수 있음*/
+#personal {
+  background-color: rgb(0, 0, 0);
+}
+#ebterprise {
+  background-color: rgb(0, 0, 0);
+}
+#student {
+  background-color: rgb(0, 0, 0);
+}
+#schools {
+  background-color: rgb(0, 0, 0);
+}
+
+/*******************sub-plan_container1 *******************/
+#personal > #container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 0 0 300px;
+}
+
+#container1 > .item1 {
+  width: 1200px;
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  margin: 30px 0px 0 70px;
+  color: white;
+  position: relative;
+}
+#container1 > .item {
+  width: 350px;
+  height: 450px;
+  background-color: rgb(0, 0, 0);
+  margin: 80px 0px 0 70px;
+  color: white;
+  box-shadow: 2px 2px 15px white;
+  border-radius: 10px;
+}
+
+#container1 > .item1 img {
+  width: 200px;
+  height: 200px;
+  margin: 100px 100px;
+  position: absolute;
+}
+
+#container1 > .item1 h2 {
+  text-align: center;
+  margin: -20px 0 0 400px;
+  font-size: 50px;
+  position: absolute;
+  
+}
+
+#container1 > .item1 h3 {
+  text-align: center;
+  margin: 50px 0 0 280px;
+  font-size: 15px;
+  color: rgb(187, 187, 187);
+  position: absolute;
+  
+}
+
+#container1 > .item1 p {
+  margin: 320px 0 0 130px;
+  text-align: left;
+  font-size: 25px;
+  position: absolute;
+  
+}
+#container1 > .item1 > input {
+  width: 30px;
+  height: 500px;
+  position: absolute;
+  margin: 80px 0 0 400px;
+}
+#container1 > .item1 > h4 {
+  position: absolute;
+  margin: 310px 0 0 450px;
+  text-align: center;
+}
+#container1 > .item1 > button {
+  position: absolute;
+  width: 110px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 310px 0 0 700px;
+  background-color: rgb(35, 115, 235);
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px white;
+  
+}
+
+.item1 > h5 {
+  position: absolute;
+  font-size: 90px;
+  margin: 140px 0 0 340px;
+  opacity: 0.4;
+  color: #ebebeb;
+  
+}
+
+.title {
+  color: rgb(214, 214, 214);
+  text-transform: uppercase;
+  line-height: 40px;
+  margin: 140px 0 0 0;
+}
+.title-content {
+  width: 300px;
+  display: block;
+  opacity: 1;
+  animation: revealText 0.5s forwards;
+  font-size: 15px;
+  margin: -8px 0 0 790px;
+  text-align: center;
+  
+  
+}
+.title-second {
+  animation-delay: 0.175s;
+  
+}
+.title-third {
+  animation-delay: 0.25s;
+}
+.title-fourth {
+  animation-delay: 0.325s;
+}
+.title-five {
+  animation-delay: 0.425s;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-top: 5px dotted rgb(83, 152, 255);
+  width: 100px;
+  height: 10px;
+  margin: 0 0 0 890px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*item2*/
+
+@keyframes revealText {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  margin: 500px 0 0 650px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 10px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#orderbox {
+  box-sizing: border-box;
+  width: 600px;
+  height: 600px;
+  border: 2px solid black;
+  font-size: 15px;
+}
+
+#orderbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px 10px 0 20px;
+}
+
+#orderbox > .col1 {
+  -ms-flex: 50%;
+  flex: 50%;
+  margin: 10px auto;
+}
+
+.row1 {
+  display: flex;
+  margin: 10px 0 0 -12px;
+  width: 96%;
+  padding: 0px 0px 0px 10px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 1px;
+  margin: 10px 0 0 0;
+}
+
+.col1 select {
+  margin: 15px 0 0 0;
+  width: 93%;
+}
+
+label {
+  margin: 20px 0 0 0;
+  display: block;
+}
+
+input[type="month"] {
+  width: 90%;
+  margin: 10px 0 0 0;
+}
+
+.order {
+  margin: 30px 0 10px 0;
+  width: 240px;
+  height: 50px;
+}
+.order p {
+  font-size: 10px;
+  text-align: left;
+}
+
+.order span {
+  color: blue;
+}
+
+.orderbutton {
+  width: 120px;
+  height: 40px;
+  margin: -20px 0 0 50px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px blue;
+}
+
+.myorders {
+  border: 1px solid rgb(167, 167, 167);
+  width: 290px;
+  height: 320px;
+  display: block;
+  margin: 10px 0 0 0;
+  box-shadow: 3px 3px 2px 1px gray;
+}
+.myorders > img {
+  width: 30px;
+  height: 30px;
+  margin: 30px 20px 0 40px;
+  position: relative;
+}
+.myorders span {
+  position: absolute;
+  margin: 30px 0 0 0px;
+}
+.myorders label {
+  position: absolute;
+  margin: 20px 0px 0 18px;
+  font-size: 10px;
+}
+.myorders select {
+  position: absolute;
+  margin: 20px 0 0 18px;
+  width: 250px;
+}
+.myorders hr {
+  margin: 70px 0 0 0;
+}
+
+#cols2 {
+  margin: 20px auto;
+}
+
+#cols2 h2 {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+}
+
+#cols2 h5 {
+  margin: -5px 0 0 0;
+  padding: 10px 10px 0 0;
+}
+
+#cols2 h4 {
+  margin: 20px 0 0 0;
+}
+
+#total p {
+  position: absolute;
+  margin: 40px 0 0 50px;
+  font-size: 14px;
+}
+#total #subtotal {
+  position: absolute;
+  margin: 40px 0 0 180px;
+  font-size: 14px;
+}
+
+#total h3 {
+  position: absolute;
+  margin: 65px 0 0 50px;
+  font-size: 13px;
+  color: blue;
+}
+
+#total #vat {
+  position: absolute;
+  margin: 65px 0 0 186px;
+  font-size: 13px;
+}
+
+#total h4 {
+  font-size: 18px;
+  position: absolute;
+  margin: 110px 0 0 30px;
+}
+#total #price {
+  position: absolute;
+  margin: 110px 0 0 160px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#cols2 .learn {
+  margin: 10px 10px 0 0;
+  font-size: 10px;
+}
+
+.item > h2 {
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px 0px 10px 10px;
+  
+}
+
+.item > .img1 img {
+  position: absolute;
+  width: 80px;
+  margin: 25px 0 0 80px;
+  box-shadow: 1px 1px 1px 2px white;
+}
+
+.item > .img2 img {
+  position: absolute;
+  width: 80px;
+  margin: 25px 0 0 195px;
+  box-shadow: 1px 1px 1px 2px white;
+}
+
+.item > p {
+  position: absolute;
+  margin: 130px;
+  text-align: center;
+}
+
+.item h5 {
+  position: absolute;
+  margin: 180px 0 0 50px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.item input {
+  position: absolute;
+  margin: 290px 0 0 75px;
+}
+.item h4 {
+  position: absolute;
+  margin: 280px 0 0 100px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.item button {
+  position: absolute;
+  margin: 190px 0 0 115px;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(35, 115, 235);
+  color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px 6px white;
+  border-radius: 10px;
+}
+
+.item .img3 img {
+  position: absolute;
+  width: 80px;
+  box-shadow: 1px 1px 1px 2px white;
+  margin: 25px 0 0 130px;
+}
+
+.item .img4 img {
+  position: absolute;
+  width: 80px;
+  box-shadow: 1px 1px 1px 2px white;
+  margin: 25px 0 0 130px;
+}
+.item span {
+  font-size: 15px;
+  margin: 5px 0 0 -80px;
+
+  position: absolute;
+}
+
+
+
